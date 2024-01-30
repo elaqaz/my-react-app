@@ -1,11 +1,11 @@
 // Home.js
 import React from 'react';
-import Header from '../Header/Header';
-import ProfileSection from '../ProfileSection/ProfileSection';
+import Header from './Header';
+import ProfileSection from './ProfileSection/ProfileSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
-import ProjectsSection from '../ProjectsSection/ProjectsSection';
-import ContactSection from '../ContactSection/ContactSection';
-import Footer from '../Footer/Footer';
+import ProjectsSection from './ProjectsSection/ProjectsSection';
+import ContactSection from './ContactSection';
+import Footer from './footer';
 import styles from './Home.module.css'; // Assuming you have some styles for the Home page
 
 const Home = () => {

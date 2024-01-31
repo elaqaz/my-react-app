@@ -1,27 +1,30 @@
-// Import necessary components and libraries
 import React from 'react';
-import Header from './components/Header';
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-src/components/NavBar
-import Home from './Home'; // Import Home from the same directory
-import About from './components/About';
-// Import other components
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import ProfileSection from './components/ProfileSection';
+import SkillsSection from './components/SkillsSection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactSection from './components/ContactSection';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        {/* Add routes for other sections */}
+        <Route path="/" exact component={Home} />
+        <Route path="/profile" component={ProfileSection} />
+        <Route path="/skills" component={SkillsSection} />
+        <Route path="/projects" component={ProjectsSection} />
+        <Route path="/contact" component={ContactSection} />
       </Switch>
     </Router>
   );
 }
 
 export default App;
+
 
 // function App() {
 //   return (
